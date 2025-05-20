@@ -1,0 +1,6 @@
+@Ponude.Api_HostAddress = http://localhost:5056
+
+GET {{Ponude.Api_HostAddress}}/ponude/
+Accept: application/json
+
+###
