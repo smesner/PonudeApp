@@ -17,7 +17,7 @@ namespace Ponude.Api.Controllers
         {
             if (request is null)
                 return BadRequest();
-            var response = _artikliService.CreateAsync(request, token);
+            var response = await _artikliService.CreateAsync(request, token);
 
             return CreatedAtAction(nameof(Get), new { id = response.Id }, response);
         }
